@@ -11,4 +11,4 @@ mongoose.connect("mongodb+srv://admin:admin@cluster0.fpgcudm.mongodb.net/car?ret
 
 aplication.get("/cars",CarController.getAll)
 
-aplication.listen(3000)
+aplication.listen(3000,()=>console.log("running"))
